@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 http://www.mulesoft.org/schema/mule/json-logger http://www.mulesoft.org/schema/mule/json-logger/current/mule-json-logger.xsd">
 
 	<flow name="account-eapi-mindFlow" doc:id="21bf651c-381b-4318-bd9f-561c8e4bf9bf" >
-		<logger level="INFO" doc:name="Loggers" doc:id="6bde472e-2daf-41ea-b954-f331409e09fb" message="Before entered into Experience API, the payload is this:::::: #[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="6bde472e-2daf-41ea-b954-f331409e09fb" message="Before entered into Experience API, the payload is this:::::: #[payload]"/>
 		<ee:transform doc:name="values of /papi/sfdc to insert the data" doc:id="80f9670f-becb-446e-8b95-8d317ae873ff" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
